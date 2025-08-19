@@ -36,9 +36,9 @@ body {
 }
 
 #rama2 {
-    position: fixed;
-    width: 358px !important;
-    height: 156px !important;
+    position: absolute;
+    width: 300px !important;
+    height: 75px !important;
     background-size: cover;
     background-image: url("img/rama2_out.svg");
     background-repeat: no-repeat;
@@ -48,19 +48,19 @@ body {
 }
 
 #rama3 {
-    position: fixed;
-    width: 178px !important;
-    height: 282px !important;
+    position: absolute;
+    width: 100px !important;
+    height: 200px !important;
     background-size: cover;
     background-image: url("img/rama3_out.svg");
     background-repeat: no-repeat;
-    top: 0px;
+    top: 100px;
     right: 0px;
-    z-index: 1;
+    z-index: 100;
 }
 
 #rama4 {
-    position: fixed;
+    position: absolute;
     width: 198px !important;
     height: 374px !important;
     background-size: cover;
@@ -68,11 +68,11 @@ body {
     background-repeat: no-repeat;
     left: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 100;
 }
 
 #rama5 {
-    position: fixed;
+    position: absolute;
     width: 285px !important;
     height: 180px !important;
     background-size: cover;
@@ -80,18 +80,19 @@ body {
     background-repeat: no-repeat;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 100;
 }
 
 .wrapper {
     margin: 0px auto;
     width: 90%;
-    max-width: 1000px;
+    max-width: 950px;
     padding: 60px;
     background-color: #102c4e;
     background-image: url("img/patron.svg");
     background-size: 100%;
     background-repeat: repeat;
+    z-index: 20;
 }
 
 .informacion {
@@ -99,10 +100,30 @@ body {
     padding: 100px;
 }
 
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 60px !important;
+    }
+
+    h2 {
+        font-size: 40px !important;
+    }
+}
+
 h1 {
     font-family: "Matiz", sans-serif;
     text-align: center;
-    font-size: 100px;
+    font-size: 70px;
     color: #07a594;
     text-shadow:
         2px 2px 2px #fff,
@@ -113,15 +134,15 @@ h1 {
 
 h2 {
     font-family: "Matiz", sans-serif;
-    font-size: 75px;
+    font-size: 50px;
     color: #fec554;
     text-align: center;
-    margin-top: -36px;
+    margin-top: -30px;
 }
 
 h3 {
     font-family: "Matiz", sans-serif;
-    font-size: 45px;
+    font-size: 35px;
     padding-top: 20px;
     color: #fec554;
 }
@@ -166,7 +187,7 @@ h3 {
 }
 
 .card-info {
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Matiz", sans-serif;
     color: #fff;
 }
