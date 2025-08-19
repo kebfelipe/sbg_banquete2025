@@ -5,37 +5,125 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Matiz";
+    src: url("font/matiz.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
-    color: #053885;
 }
 
 body {
-    background-image: url("img/patron.jpg");
+    background: #105284;
+    width: 100%;
+    height: 100%;
+}
+
+#rama1 {
+    position: absolute;
+    width: 240px !important;
+    height: 246px !important;
+    background-size: cover;
+    background-image: url("img/rama1_out.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#rama2 {
+    position: fixed;
+    width: 358px !important;
+    height: 156px !important;
+    background-size: cover;
+    background-image: url("img/rama2_out.svg");
+    background-repeat: no-repeat;
+    right: 0px;
+    top: 0;
+    z-index: 1;
+}
+
+#rama3 {
+    position: fixed;
+    width: 178px !important;
+    height: 282px !important;
+    background-size: cover;
+    background-image: url("img/rama3_out.svg");
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#rama4 {
+    position: fixed;
+    width: 198px !important;
+    height: 374px !important;
+    background-size: cover;
+    background-image: url("img/rama4_out.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#rama5 {
+    position: fixed;
+    width: 285px !important;
+    height: 180px !important;
+    background-size: cover;
+    background-image: url("img/rama5_out.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
 .wrapper {
-    margin: 25px auto;
-    width: 95%;
+    margin: 0px auto;
+    width: 90%;
     max-width: 1000px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    background-color: #102c4e;
+    background-image: url("img/patron.svg");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.informacion {
+    border: 10px solid #ffffff;
+    padding: 100px;
 }
 
 h1 {
-    font-family: "Moana", sans-serif;
+    font-family: "Matiz", sans-serif;
     text-align: center;
-    font-size: 48px;
-    color: rgba(23, 114, 174) !important;
+    font-size: 100px;
+    color: #07a594;
+    text-shadow:
+        2px 2px 2px #fff,
+        -2px 2px 2px #fff,
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff;
 }
 
 h2 {
-    font-family: "Moana", sans-serif;
-    font-size: 22px;
-    color: rgb(22, 103, 156) !important;
+    font-family: "Matiz", sans-serif;
+    font-size: 75px;
+    color: #fec554;
+    text-align: center;
+    margin-top: -36px;
+}
+
+h3 {
+    font-family: "Matiz", sans-serif;
+    font-size: 45px;
+    padding-top: 20px;
+    color: #fec554;
 }
 
 .audio-container {
@@ -48,10 +136,44 @@ h2 {
     max-width: 600px;
 }
 
+.info-container {
+    width: 100%;
+}
+
+.cards-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-info {
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    border: 2px dotted #fff;
+    padding: 12px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-info:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-info {
+    font-size: 30px;
+    font-family: "Matiz", sans-serif;
+    color: #fff;
+}
+
 .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+    width: 60px;
+    height: 60px;
 }
 
 /*. galeria */
@@ -119,54 +241,52 @@ figure img {
     background-color: #0f3a90;
 }
 
-
 /*. tabs */
 .order {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr;*/
-  
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;*/
 }
 /* Style the tab */
 .tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #053885;
-  
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #053885;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-  color: #fff !important; 
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #fff !important;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #0850bd;
+    background-color: #0850bd;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #0850bd;
+    background-color: #0850bd;
 }
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
+
 .tabimage {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
