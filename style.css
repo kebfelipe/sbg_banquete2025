@@ -21,6 +21,10 @@ body {
     background: #105284;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #rama1 {
@@ -32,7 +36,7 @@ body {
     background-repeat: no-repeat;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: -100;
 }
 
 #rama2 {
@@ -44,7 +48,7 @@ body {
     background-repeat: no-repeat;
     right: 0px;
     top: 0;
-    z-index: 1;
+    z-index: -100;
 }
 
 #rama3 {
@@ -56,11 +60,11 @@ body {
     background-repeat: no-repeat;
     top: 100px;
     right: 0px;
-    z-index: 100;
+    z-index: -100;
 }
 
 #rama4 {
-    position: absolute;
+    position: fixed;
     width: 198px !important;
     height: 374px !important;
     background-size: cover;
@@ -68,11 +72,11 @@ body {
     background-repeat: no-repeat;
     left: 0;
     bottom: 0;
-    z-index: 100;
+    z-index: -100;
 }
 
 #rama5 {
-    position: absolute;
+    position: fixed;
     width: 285px !important;
     height: 180px !important;
     background-size: cover;
@@ -80,11 +84,42 @@ body {
     background-repeat: no-repeat;
     right: 0;
     bottom: 0;
-    z-index: 100;
+    z-index: -100;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 20px !important;
+    }
+
+    .informacion {
+        padding: 50px !important;
+    }
+
+    h1 {
+        font-size: 50px !important;
+    }
+
+    h2 {
+        font-size: 40px !important;
+        margin-top: -20px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+
+    .carousel {
+        width: 200px !important;
+        height: 100px !important;
+    }
+
+    figure img {
+        height: 200px !important;
+    }
 }
 
 .wrapper {
-    margin: 0px auto;
     width: 90%;
     max-width: 950px;
     padding: 60px;
@@ -92,32 +127,12 @@ body {
     background-image: url("img/patron.svg");
     background-size: 100%;
     background-repeat: repeat;
-    z-index: 20;
+    z-index: 20 !important;
 }
 
 .informacion {
     border: 10px solid #ffffff;
     padding: 100px;
-}
-
-@media screen and (max-width: 400px) {
-    h1 {
-        font-size: 30px !important;
-    }
-
-    h2 {
-        font-size: 20px !important;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 60px !important;
-    }
-
-    h2 {
-        font-size: 40px !important;
-    }
 }
 
 h1 {
@@ -143,7 +158,7 @@ h2 {
 h3 {
     font-family: "Matiz", sans-serif;
     font-size: 35px;
-    padding-top: 20px;
+    padding-top: 40px;
     color: #fec554;
 }
 
@@ -171,7 +186,7 @@ h3 {
 
 .card-info {
     width: 200px;
-    height: 150px;
+    height: 160px;
     text-align: center;
     align-items: center;
     border: 2px dotted #fff;
@@ -180,16 +195,22 @@ h3 {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     cursor: pointer;
+    font-size: 22px;
+    font-family: "Matiz", sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-info p {
+    margin: 0;
+    padding: 0;
 }
 
 .card-info:hover {
     background-color: rgba(0, 0, 0, 0.2);
-}
-
-.card-info {
-    font-size: 25px;
-    font-family: "Matiz", sans-serif;
-    color: #fff;
 }
 
 .icon {
@@ -197,117 +218,17 @@ h3 {
     height: 60px;
 }
 
-/*. galeria */
-figure {
-    margin: 0;
-}
-
-figure img {
-    height: 400px;
-}
-
-.carousel {
-    width: 100%;
-    height: 410px !important;
-}
-
-#gallery {
-    max-width: 900px;
-    height: 400px;
-    margin: 0 auto !important;
-    overflow: hidden;
-    position: absolute;
-}
-
-.gallery-container {
+.gallery {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.gallery-item {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.gallery-item img {
-    width: 100%;
-    display: block;
-}
-
-/* Navegación de la galería */
-.gallery-navigation {
-    display: flex;
-    justify-content: space-between;
-    width: calc(100% - 40px);
-    margin: 0 20px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.nav-button {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.nav-button > span {
-    font-size: 30px;
-}
-
-.nav-button:hover {
-    background-color: #0f3a90;
-}
-
-/*. tabs */
-.order {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr;*/
-}
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #053885;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    color: #fff !important;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #0850bd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #0850bd;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-.tabimage {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+.gallery img {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
 }
