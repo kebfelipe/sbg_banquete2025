@@ -86,8 +86,41 @@ body {
     bottom: 0;
     z-index: -100;
 }
+@media (max-width: 400px) {
+    .wrapper {
+        width: 100% !important;
+        padding: 10px !important;
+    }
 
-@media (max-width: 600px) {
+    .informacion {
+        border: 5px solid #ffffff !important;
+        padding: 20px !important;
+    }
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h2 {
+        font-size: 40px !important;
+        margin-top: -20px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+
+    .carousel {
+        width: 200px !important;
+        height: 100px !important;
+    }
+
+    figure img {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 401px) {
     .wrapper {
         padding: 20px !important;
     }
