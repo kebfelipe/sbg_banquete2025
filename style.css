@@ -86,6 +86,7 @@ body {
     bottom: 0;
     z-index: -100;
 }
+
 @media (max-width: 490px) {
     .wrapper {
         width: 100% !important;
@@ -94,16 +95,16 @@ body {
 
     .informacion {
         border: 5px solid #ffffff !important;
-        padding: 20px !important;
+        padding: 15px !important;
     }
 
     h1 {
-        font-size: 30px !important;
+        font-size: 50px !important;
     }
 
     h2 {
         font-size: 40px !important;
-        margin-top: -20px !important;
+        margin-top: -25px !important;
     }
 
     h3 {
@@ -130,12 +131,12 @@ body {
     }
 
     h1 {
-        font-size: 50px !important;
+        font-size: 60px !important;
     }
 
     h2 {
         font-size: 40px !important;
-        margin-top: -20px !important;
+        margin-top: -30px !important;
     }
 
     h3 {
