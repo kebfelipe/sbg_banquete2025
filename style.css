@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "Moana";
-    src: url("font/moanas.ttf") format("truetype");
+    font-family: "Brushtime";
+    src: url("font/brushtime.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Matiz";
-    src: url("font/matiz.ttf") format("truetype");
+    font-family: "Edosz";
+    src: url("font/edosz.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -15,6 +15,11 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+p {
+    color: #fff !important;
+    padding-bottom: 0px;
 }
 
 body {
@@ -131,12 +136,12 @@ body {
     }
 
     h1 {
-        font-size: 60px !important;
+        font-size: 50px !important;
     }
 
     h2 {
         font-size: 40px !important;
-        margin-top: -30px !important;
+        margin-top: -20px !important;
     }
 
     h3 {
@@ -154,8 +159,9 @@ body {
 }
 
 .wrapper {
+    position: relative;
     width: 90%;
-    max-width: 950px;
+    max-width: 900px;
     padding: 60px;
     background-color: #102c4e;
     background-image: url("img/patron.svg");
@@ -164,36 +170,68 @@ body {
     z-index: 20 !important;
 }
 
+#rama_in_verde_1 {
+    position: absolute;
+    width: 56px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("img/rama_top_verde_1.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+}
+
 .informacion {
-    border: 10px solid #ffffff;
-    padding: 100px;
+    border: 7px solid #ffffff;
+    padding: 30px;
 }
 
 h1 {
-    font-family: "Matiz", sans-serif;
+    font-family: "Edosz", sans-serif;
     text-align: center;
     font-size: 70px;
     color: #07a594;
     text-shadow:
-        2px 2px 2px #fff,
-        -2px 2px 2px #fff,
-        -2px -2px 0 #fff,
-        2px -2px 0 #fff;
+        1px 1px 1px #fff,
+        -1px 1px 1px #fff,
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 h2 {
-    font-family: "Matiz", sans-serif;
+    font-family: "Edosz", sans-serif;
     font-size: 50px;
     color: #fec554;
     text-align: center;
-    margin-top: -30px;
+    text-shadow:
+        2px 2px 2px #000,
+        -2px 2px 2px #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000;
 }
 
 h3 {
-    font-family: "Matiz", sans-serif;
-    font-size: 35px;
+    font-family: "Brushtime", sans-serif;
+    font-size: 40px;
     padding-top: 40px;
     color: #fec554;
+    border-bottom: 2px dashed #fff;
+    text-shadow:
+        1px 1px 1px #000,
+        -1px 1px 1px #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000;
+}
+
+h4 {
+    background: #102c4e;
+    padding: 10px;
+    border: 1px dashed #fff;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
 }
 
 .audio-container {
@@ -204,6 +242,19 @@ h3 {
 .audio-container audio {
     width: 100%;
     max-width: 600px;
+}
+
+.text-invitacion {
+    color: #fff;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.separador {
+    width: 60px !important;
+    height: 100px !important;
+    text-align: center;
 }
 
 .info-container {
@@ -219,17 +270,17 @@ h3 {
 }
 
 .card-info {
-    width: 200px;
+    width: 150px;
     height: 160px;
     text-align: center;
     align-items: center;
     border: 2px dotted #fff;
     padding: 12px;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(9, 57, 92, 0.6);
     border-radius: 10px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 16px;
     font-family: "Matiz", sans-serif;
     color: #fff;
     display: flex;
@@ -244,12 +295,39 @@ h3 {
 }
 
 .card-info:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(110, 151, 181, 0.2);
 }
 
 .icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.nav {
+    border-radius: 10px;
+    background: rgba(16, 44, 78, 0.5);
+    border: 3px dashed rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.nav-item {
+    padding: 10px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background: rgba(29, 80, 141, 1);
+}
+
+.nav-item:active {
+    background: rgba(29, 80, 141, 1);
+}
+
+.icon-nav {
+    width: 50px;
+    height: 50px;
 }
 
 .gallery {

@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "sbg-app",
+            "address": "localhost",
+            "port": 9250,
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/var/www/html/sbg-app",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "/app/*": "${workspaceFolder}/sbg-app/*",
+                "webpack:///sbg-app/*": "${workspaceFolder}/sbg-app/*",
+                "webpack:///./*": "${workspaceFolder}/sbg-app/*",
+                "webpack:///node_modules/*": "${workspaceFolder}/node_modules/*",
+                "webpack:///*": "*"
+            },
+            "skipFiles": [],
+            "outFiles": [
+                "${workspaceFolder}/sbg-app/dist/**/*.js"
+            ]
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "name": "sbg-app-web",
+            "url": "http://localhost:4400",
+            "webRoot": "/var/www/html/sbg-app",
+            "pathMappings": [
+                {
+                    "url": "webpack:///src",
+                    "path": "${workspaceFolder}/src"
+                }
+            ]
+        },
+    ],
+    "compounds": [
+        {
+            "name": "SBG APP",
+            "configurations": [
+                "sbg-app",
+                "sbg-app-web",
+            ]
+        }
+    ]
+}
