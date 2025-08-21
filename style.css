@@ -20,6 +20,7 @@
 p {
     color: #fff !important;
     padding-bottom: 0px;
+    z-index: 200 !important;
 }
 
 body {
@@ -124,6 +125,10 @@ body {
     figure img {
         height: 200px !important;
     }
+
+    .footer {
+        margin-bottom: 300px !important;
+    }
 }
 
 @media (max-width: 820px) and (min-width: 491px) {
@@ -179,11 +184,247 @@ body {
     background-repeat: no-repeat;
     right: 0;
     top: 0;
+    z-index: 20 !important;
 }
 
+#rama_azul_1 {
+    position: absolute;
+    width: 56px;
+    height: 133px;
+    background-size: cover;
+    background-image: url("img/rama_azul_1.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 3%;
+    z-index: 20 !important;
+}
+
+#rama_azul_2 {
+    position: absolute;
+    width: 59px;
+    height: 165px;
+    background-size: cover;
+    background-image: url("img/rama_azul_2.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 30%;
+}
+
+#rama_azul_3 {
+    position: absolute;
+    width: 93px;
+    height: 123px;
+    background-size: cover;
+    background-image: url("img/rama_azul_3.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 80%;
+}
+
+#rama_azul_4 {
+    position: absolute;
+    width: 138px;
+    height: 80px;
+    background-size: cover;
+    background-image: url("img/rama_azul_4.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+}
+
+#hoja_azul_1 {
+    position: absolute;
+    width: 60px;
+    height: 101px;
+    background-size: cover;
+    background-image: url("img/hoja_azul_1.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 40%;
+}
+
+#hoja_azul_2 {
+    position: absolute;
+    width: 128px;
+    height: 120px;
+    background-size: cover;
+    background-image: url("img/hoja_azul_2.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
+}
+
+#hoja_azul_3 {
+    position: absolute;
+    width: 70px;
+    height: 92px;
+    background-size: cover;
+    background-image: url("img/hoja_azul_3.svg");
+    background-repeat: no-repeat;
+    right: 50%;
+    bottom: 0;
+}
+
+#hoja_azul_4 {
+    position: absolute;
+    width: 71px;
+    height: 70px;
+    background-size: cover;
+    background-image: url("img/hoja_azul_4.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 0;
+}
+
+#rama_verde_1 {
+    position: absolute;
+    width: 86px;
+    height: 49px;
+    background-size: cover;
+    background-image: url("img/rama_verde_1.svg");
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+}
+
+#rama_verde_2 {
+    position: absolute;
+    width: 92px;
+    height: 102px;
+    background-size: cover;
+    background-image: url("img/rama_verde_2.svg");
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 30%;
+}
+
+#rama_verde_3 {
+    position: absolute;
+    width: 156px;
+    height: 84px;
+    background-size: cover;
+    background-image: url("img/rama_verde_3.svg");
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 20%;
+}
+
+#rama_azul_5 {
+    position: absolute;
+    width: 125px;
+    height: 134px;
+    background-size: cover;
+    background-image: url("img/rama_azul_5.svg");
+    background-repeat: no-repeat;
+    bottom: 3%;
+    left: 0;
+}
+
+#rama_verde_4 {
+    position: absolute;
+    width: 91px;
+    height: 157px;
+    background-size: cover;
+    background-image: url("img/rama_verde_4.svg");
+    background-repeat: no-repeat;
+    bottom: 4%;
+    left: 0;
+}
+
+#flor_rosada_1 {
+    position: absolute;
+    width: 74px;
+    height: 103px;
+    background-size: cover;
+    background-image: url("img/flor_rosada_1.svg");
+    background-repeat: no-repeat;
+    bottom: 2%;
+    left: 0;
+}
+
+#rama_azul_6 {
+    position: absolute;
+    width: 161px;
+    height: 55px;
+    background-size: cover;
+    background-image: url("img/rama_azul_6.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+
+#rama_azul_7 {
+    position: absolute;
+    width: 61px;
+    height: 137px;
+    background-size: cover;
+    background-image: url("img/rama_azul_7.svg");
+    background-repeat: no-repeat;
+    top: 10%;
+    right: 0;
+    z-index: -10 !important;
+}
+
+#hoja_verde_claro_1 {
+    position: absolute;
+    width: 32px;
+    height: 99px;
+    background-size: cover;
+    background-image: url("img/hoja_verde_claro_1.svg");
+    background-repeat: no-repeat;
+    bottom: 20%;
+    left: 0;
+}
+
+#rama_verde_5 {
+    position: absolute;
+    width: 72px;
+    height: 128px;
+    background-size: cover;
+    background-image: url("img/rama_verde_5.svg");
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 10%;
+}
+
+#flor_roja_1 {
+    position: absolute;
+    width: 57px;
+    height: 53px;
+    background-size: cover;
+    background-image: url("img/flor_rosada_2.svg");
+    background-repeat: no-repeat;
+    bottom: 9%;
+    left: 30px;
+}
+
+#flor_naranja_1 {
+    position: absolute;
+    width: 56px;
+    height: 122px;
+    background-size: cover;
+    background-image: url("img/flor_naranja_1.svg");
+    background-repeat: no-repeat;
+    bottom: 10%;
+    left: 0;
+}
+
+#rama_verde_6 {
+    position: absolute;
+    width: 57px;
+    height: 125px;
+    background-size: cover;
+    background-image: url("img/rama_verde_6.svg");
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+}
+
+
 .informacion {
-    border: 7px solid #ffffff;
-    padding: 30px;
+    border: 5px solid #ffffff;
+    padding: 35px;
+    z-index: 50px;
 }
 
 h1 {
@@ -343,4 +584,8 @@ h4 {
     width: 300px;
     height: 450px;
     border-radius: 10px;
+}
+
+.footer {
+    margin-bottom: 200px;
 }
