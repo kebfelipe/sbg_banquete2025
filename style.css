@@ -21,6 +21,11 @@ p {
     color: #fff !important;
     padding-bottom: 0px;
     z-index: 200 !important;
+    text-shadow:
+        2px 2px 2px #252525,
+        -2px 2px 2px #252525,
+        -2px -2px 0 #252525,
+        2px -2px 0 #252525;
 }
 
 body {
@@ -129,6 +134,10 @@ body {
     .footer {
         margin-bottom: 300px !important;
     }
+
+    .footer {
+        margin-bottom: 400px !important;
+    }
 }
 
 @media (max-width: 820px) and (min-width: 491px) {
@@ -160,6 +169,10 @@ body {
 
     figure img {
         height: 200px !important;
+    }
+
+    .footer {
+        margin-bottom: 300px !important;
     }
 }
 
@@ -394,7 +407,7 @@ body {
     background-size: cover;
     background-image: url("img/flor_rosada_2.svg");
     background-repeat: no-repeat;
-    bottom: 9%;
+    bottom: 6%;
     left: 30px;
 }
 
@@ -405,7 +418,7 @@ body {
     background-size: cover;
     background-image: url("img/flor_naranja_1.svg");
     background-repeat: no-repeat;
-    bottom: 10%;
+    bottom: 7%;
     left: 0;
 }
 
@@ -419,7 +432,6 @@ body {
     bottom: 0;
     right: 0;
 }
-
 
 .informacion {
     border: 5px solid #ffffff;
@@ -486,10 +498,15 @@ h4 {
 }
 
 .text-invitacion {
-    color: #fff;
+    color: #fec554 !important;
     text-align: justify;
     font-family: sans-serif;
     font-size: 16px;
+    text-shadow:
+        2px 2px 2px #252525,
+        -2px 2px 2px #252525,
+        -2px -2px 0 #252525,
+        2px -2px 0 #252525;
 }
 
 .separador {
@@ -587,5 +604,5 @@ h4 {
 }
 
 .footer {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
